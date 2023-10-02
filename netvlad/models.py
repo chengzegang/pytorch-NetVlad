@@ -73,7 +73,7 @@ class PretrainedModel(ABCMeta):
             return mcls
 
 
-class IMAGENETVLAD_VGG16_PITTSBURGH_GITHUB(
+class NETVLAD_VGG16_PITTSBURGH(
     ImageNetVLAD,
     metaclass=PretrainedModel,
     checkpoint_name="vgg16_netvlad_pittsburger_github.pt",
@@ -89,4 +89,4 @@ class IMAGENETVLAD_VGG16_PITTSBURGH_GITHUB(
 
 
 class PrerainedModels(Enum):
-    IMAGENETVLAD_VGG16_PITTSBURGH_GITHUB = IMAGENETVLAD_VGG16_PITTSBURGH_GITHUB
+    NETVLAD_VGG16_PITTSBURGH = NETVLAD_VGG16_PITTSBURGH()
