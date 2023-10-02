@@ -8,6 +8,6 @@ def NETVLAD_VGG16_PITTSBURGH(
     optimize_for_inference: bool = False,
     **kwargs
 ):
-    return PrerainedModels["NETVLAD_VGG16_PITTSBURGH "].value(
+    return PrerainedModels["NETVLAD_VGG16_PITTSBURGH"].value(
         pretrained, optimize, optimize_for_inference, **kwargs
     )
